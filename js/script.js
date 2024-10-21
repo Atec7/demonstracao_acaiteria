@@ -1,5 +1,4 @@
 const cart = [];
-
 function addToCart(name, price, quantityId, button) {
     const quantity = parseInt(document.getElementById(quantityId).value);
     const productElement = button.parentElement;
@@ -16,8 +15,17 @@ function addToCart(name, price, quantityId, button) {
     };
     cart.push(cartItem);
     renderCart();
-}
+    // Mostrar mensagem de sucesso
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'success-message';
+    messageDiv.textContent = `${name} foi adicionado ao carrinho!`;
+    document.body.appendChild(messageDiv);
 
+    // Esconder a mensagem após 3 segundos
+    setTimeout(() => {
+        document.body.removeChild(messageDiv);
+    }, 3000);
+}
 function renderCart() {
     const cartItemsElement = document.getElementById('cart-items');
     const totalPriceElement = document.getElementById('total-price');
