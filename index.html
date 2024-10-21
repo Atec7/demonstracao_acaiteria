@@ -26,79 +26,56 @@
             cuidadosamente pensado para oferecer a você um sabor incrível e uma nutrição insuperável. 
             Confira os ingredientes irresistíveis que compõem essa maravilha</P>
         <p>R$10.00</p>
-        <label for="quantity-small">Quantidade:</label>
-        <input type="number" id="quantity-small" name="quantity-small" min="1" value="1">
+        <label for="quantity-small1">Quantidade:</label>
+        <input type="number" id="quantity-small1" name="quantity-small1" min="1" value="1">
         <fieldset>
             <legend>Adicionais:</legend>
             <label><input type="checkbox" class="additional" value="5" data-name="Granola"> Granola (+R$5.00)</label><br>
             <label><input type="checkbox" class="additional" value="3" data-name="Mel"> Mel (+R$3.00)</label><br>
             <label><input type="checkbox" class="additional" value="4" data-name="Banana"> Banana (+R$4.00)</label>
         </fieldset>
-        <button onclick="addToCart('Açaí pequeno', 10, 'quantity-small', this)">Adicionar ao Carrinho</button>
+        <button onclick="addToCart('Açaí pequeno', 10, 'quantity-small1', this)">Adicionar ao Carrinho</button>
     </div>
 
     <!-- ACIMA É CAMPO DE PRODUTO -->
 
-    <div class="product" data-name="Açaí médio" data-price="15">
-        <h2>Açaí Médio - 500ml - (item promocional) </h2>
-        <img class="produto" src="img/açai-2.png" alt="">
+     <div class="product" data-name="Açaí pequeno" data-price="15">
+        <h2>Açaí Médio - 500ml (item promocional) </h2>
+        <img class="produto" src="img/açai-3.png" alt="">
         <P>Prepare-se para uma experiência deliciosa e revitalizante com nosso copo de açaí de 700ml! Cada detalhe foi 
             cuidadosamente pensado para oferecer a você um sabor incrível e uma nutrição insuperável. 
             Confira os ingredientes irresistíveis que compõem essa maravilha</P>
         <p>R$15.00</p>
-        <label for="quantity-medium">Quantidade:</label>
-        <input type="number" id="quantity-medium" name="quantity-medium" min="1" value="1">
+        <label for="quantity-small2">Quantidade:</label>
+        <input type="number" id="quantity-small2" name="quantity-small2" min="1" value="1">
         <fieldset>
             <legend>Adicionais:</legend>
             <label><input type="checkbox" class="additional" value="5" data-name="Granola"> Granola (+R$5.00)</label><br>
             <label><input type="checkbox" class="additional" value="3" data-name="Mel"> Mel (+R$3.00)</label><br>
             <label><input type="checkbox" class="additional" value="4" data-name="Banana"> Banana (+R$4.00)</label>
         </fieldset>
-        <button onclick="addToCart('Açaí médio', 15, 'quantity-medium', this)">Adicionar ao Carrinho</button>
+        <button onclick="addToCart('Açaí Médio - 500ml (item promocional)', 15, 'quantity-small2', this)">Adicionar ao Carrinho</button>
     </div>
 
-    <!-- ACIMA É CAMPO DE PRODUTO -->
-
-    <div class="product" data-name="Açaí grande" data-price="20">
-        <h2>Açaí Grande - 700ml - (item promocional) </h2>
-        <img class="produto" src="img/açai-1.png" alt="">
+    <!-- TODOS OS PRODUTOS DEVEM ESTAR DENTRO DA SECTION!!!! -->
+      <div class="product" data-name="Açaí pequeno" data-price="20">
+        <h2>Açaí Grande - 700ml (item promocional) </h2>
+        <img class="produto" src="img/açai-3.png" alt="">
         <P>Prepare-se para uma experiência deliciosa e revitalizante com nosso copo de açaí de 700ml! Cada detalhe foi 
             cuidadosamente pensado para oferecer a você um sabor incrível e uma nutrição insuperável. 
             Confira os ingredientes irresistíveis que compõem essa maravilha</P>
         <p>R$20.00</p>
-        <label for="quantity-medium">Quantidade:</label>
-        <input type="number" id="quantity-medium" name="quantity-medium" min="1" value="1">
+        <label for="quantity-small3">Quantidade:</label>
+        <input type="number" id="quantity-small3" name="quantity-small3" min="1" value="1">
         <fieldset>
             <legend>Adicionais:</legend>
             <label><input type="checkbox" class="additional" value="5" data-name="Granola"> Granola (+R$5.00)</label><br>
             <label><input type="checkbox" class="additional" value="3" data-name="Mel"> Mel (+R$3.00)</label><br>
             <label><input type="checkbox" class="additional" value="4" data-name="Banana"> Banana (+R$4.00)</label>
         </fieldset>
-        <button onclick="addToCart('Açaí médio', 15, 'quantity-medium', this)">Adicionar ao Carrinho</button>
+        <button onclick="addToCart('Açaí Grande - 700ml (item promocional)', 20, 'quantity-small3', this)">Adicionar ao Carrinho</button>
     </div>
-
-    <!-- TODOS OS PRODUTOS DEVEM ESTAR DENTRO DA SECTION!!!! -->
-     <!-- ACIMA É CAMPO DE PRODUTO -->
-
-    <div class="product" data-name="Açaí grande" data-price="20">
-        <h2>Açaí Grande - 700ml - (item promocional) </h2>
-        <img class="produto" src="img/açai-1.png" alt="">
-        <P>Prepare-se para uma experiência deliciosa e revitalizante com nosso copo de açaí de 700ml! Cada detalhe foi 
-            cuidadosamente pensado para oferecer a você um sabor incrível e uma nutrição insuperável. 
-            Confira os ingredientes irresistíveis que compõem essa maravilha</P>
-        <p>R$20.00</p>
-        <label for="quantity-large">Quantidade:</label>
-        <input type="number" id="quantity-large" name="quantity-large" min="1" value="1">
-        <fieldset>
-            <legend>Adicionais:</legend>
-            <label><input type="checkbox" class="additional" value="5" data-name="Granola"> Granola (+R$5.00)</label><br>
-            <label><input type="checkbox" class="additional" value="3" data-name="Mel"> Mel (+R$3.00)</label><br>
-            <label><input type="checkbox" class="additional" value="4" data-name="Banana"> Banana (+R$4.00)</label>
-        </fieldset>
-        <button onclick="addToCart('Açaí grande', 20, 'quantity-large', this)">Adicionar ao Carrinho</button>
-    </div>
-
-    <!-- TODOS OS PRODUTOS DEVEM ESTAR DENTRO DA SECTION!!!! -->
+     
 </section>
 
 
